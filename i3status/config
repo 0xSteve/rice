@@ -1,0 +1,47 @@
+#This is my config for i3status items.
+
+general {
+    output_format= "i3bar"
+    colors = true
+    color_good      = '#32cd32'
+    color_degraded  = '#DD4700'
+    color_bad       = '#DD4700'
+    interval = 1
+    
+}
+
+
+order += "volume master" 
+order += "wireless wlp2s0"
+order += "battery 0"
+order += "tztime local"
+
+wireless wlp2s0 {
+        #format_up = "W: (%quality at %essid, %bitrate) %ip"
+	format_up = "%essid%"
+        format_down = "no WiFi"
+}
+
+battery 0 {
+	format = "%status %percentage %remaining"
+        #format = "%status %percentage %remaining %emptytime"
+        format_down = "NOBAT"
+        status_chr = "CHR"
+        status_bat = "BAT"
+        status_unk = "UNK"
+        status_full = "FULL"
+        path = "/sys/class/power_supply/BAT%d/uevent"
+        low_threshold = 10
+}
+
+
+tztime local {
+        format = "%Y-%m-%d %I:%M:%S:%p"
+}
+
+volume master {
+        format = "VOL: %volume"
+        format_muted = "MUT: %volume"	
+        device = "pulse"
+}
+

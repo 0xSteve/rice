@@ -1,0 +1,79 @@
+#*foreground: #0577CC
+*foreground: #224422
+#*foreground_bold: #a8a19f
+*foreground_bold: #337733
+#*cursor: #a8a19f
+*cursor: #f22c40
+*background:       #1b1918
+!!*background: rgba(0, 0, 0, .7)
+
+!! black
+*color0: #1b1918
+*color8: #766e6b
+!! red
+*color1: #f22c40
+*color9: #f22c40
+!! green
+*color2: #5ab738
+*color10: #5ab738
+!! yellow
+*color3: #d5911a
+*color11: #d5911a
+!! blue
+*color4: #1111aa
+color12:#1111aa
+#*color4: #224422
+#*color12: #224422
+!! magenta
+#*color5: #6666ea
+#*color13: #6666ea
+*color5: #224422
+*color13: #224422
+
+!! cyan
+#*color6: #00ad9c
+#*color14: #00ad9c
+*color6: #337733
+*color14: #337733
+!! white
+*color7: #a8a19f
+*color15: #f1efee
+
+
+!!Darkgreen
+green0: #3A793A
+green1: #5F9B5F
+green2: #7ABE7A
+!!Seafoam
+green3: #90DD90
+green4: #AAFFAA
+green5: $DDFFDD
+
+
+
+
+URxvt.intensityStyles:	false
+URxvt.background:       [50]#FFFFFF
+URxvt.depth:		32
+#URxvt.font: 		xft:monospace:size=13
+#URxvt.font: Roboto:size=11:weight=bold\
+URxvt.font: xft:Roboto:size=10
+URxvt.scrollBar:	false
+URxvt.cursorColor:	red
+
+
+!! Extensions
+URxvt.perl-ext-common:	default,matcher,resize-font,url-select,keyboard-select
+URxvt.colorUL:		#4682B4
+!! url-select
+URxvt.keysym.M-u:	perl:url-select:select_next
+URxvt.url-select.launcher: linkhandler
+URxvt.url-select.underline: true
+!! keyboard-select:
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+!! resize-font
+URxvt.resize-font.smaller:	C-Down
+URxvt.resize-font.bigger:	C-Up
+!! Matcher
+URxvt.url-launcher:	linkhandler
+URxvt.matcher.button:	1
