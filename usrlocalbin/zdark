@@ -1,0 +1,2 @@
+cp ~/.config/zathura/zathurarc-dark ~/.config/zathura/zathurarc
+echo "zathura set to dark theme."

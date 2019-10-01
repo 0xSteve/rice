@@ -1,0 +1,3 @@
+#!/bin/bash
+xdotool key Alt+t p 1 Return
+echo "terminal set to dark theme."

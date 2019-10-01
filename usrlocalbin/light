@@ -1,0 +1,4 @@
+#!/bin/bash
+#lazy mode for profile switch...
+xdotool key Alt+t p 2 Return
+echo "terminal set to light theme."
